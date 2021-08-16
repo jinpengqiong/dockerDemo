@@ -1,0 +1,13 @@
+static
+node_modules
+package-lock
+npm-debug.log
+
+# ide
+.idea
+
+# Mac General
+.DS_Store
+.AppleDouble
+.LSOverride
+.vscode
