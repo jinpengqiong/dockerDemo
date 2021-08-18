@@ -1,7 +1,7 @@
 FROM node:12-alpine
-RUN apk add --no-cache python g++ make
 WORKDIR /app
-COPY . .
+COPY package.json yarn.lock ./
 RUN yarn install --production
+COPY . .
 EXPOSE 3000/tcp
 CMD ["node", "src/index.js"]
